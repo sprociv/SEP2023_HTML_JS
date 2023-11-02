@@ -1,0 +1,80 @@
+
+.father{
+    border: 1px solid black;
+    height: 400px;
+
+
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    color: white;
+    font-size: 20px;
+    font-family: 'Rubik Pixels';
+    border: 1px solid red;
+
+}
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    color: white;
+    font-size: 20px;
+    font-family: 'Rubik Pixels';
+    border: 1px solid red;
+
+}
+.flex_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex_between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box, .box1:hover{
+    background: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

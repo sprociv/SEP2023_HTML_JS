@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CONST 4</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form {
+            width: 300px;
+            box-shadow: 0 4px 16px #ccc;
+            font-family: sans-serif;
+            letter-spacing: 2px;
+            border-radius: 10px;
+            padding: 32px;
+
+        }
+
+        .form__input,
+        .form__button{
+            font-family: sans-serif;
+            letter-spacing: 2px;
+        }
+
+        .form__title{
+            text-align: center;
+            margin: 0 0 32px 0;
+
+        }
+
+        .form__group{
+            margin-bottom: 32px;
+        }
+
+        .form__input{
+            width: 100%;
+            padding: 0 0 10px 0;
+            border: none;
+            border-bottom: 2px solid #089ecc;
+            background-color: transparent;
+            outline: none;
+        }
+
+        .form__input:hover{
+            border-bottom: 2px solid #be022f;
+        }
+
+        .form_btn__group{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+         }
+
+        .form__button{
+            width: 50%;
+            padding: 10px 20px;
+            border: none;
+            color: white;
+            background-color: #089ecc;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .form__button:hover{
+            background-color: #6bd3f5;
+            transition: 0.3s;
+        }
+
+        .form__group_one{
+            display: flex;
+            margin-bottom: 32px;
+        }
+
+        .new{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<form action="" class="form">
+    <h1 class="form__title">Login</h1>
+
+    <div class="form__group">
+        <input class="form__input" type="email" required placeholder="Enter email">
+    </div>
+
+    <div class="form__group">
+        <input class="form__input" type="password" required placeholder="Enter password">
+    </div>
+
+
+    <div class="form__group_one">
+        <input class="form__input" type="email" required placeholder="ONE">
+        <input class="form__input" type="email" required placeholder="TWO">
+    </div>
+
+
+    <div class="form_btn__group">
+        <button class="form__button">Enter</button>
+            <div class="new" >
+                <lable>Checkbox</lable>
+                <input type="checkbox">
+            </div>
+    </div>
+</form>
+
+
+
+</body>
+</html>
