@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CONST 6</title>
+
+    <style>
+        body {
+            margin: 0;
+            color: white;
+            font-size: 30px;
+            font-family: "Agency FB", sans-serif;
+            font-weight: bold;
+        }
+
+        .df_center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            /*background-color: #80f1d1;*/
+            gap: 10px;
+        }
+
+        header {
+            width: 100vw;
+            height: 20vh;
+            background-color: #089ecc;
+        }
+
+        main {
+            width: 100vw;
+            height: 60vh;
+            /*background-color: #cccccc;*/
+            display: flex;
+            gap: 10px;
+        }
+
+        nav {
+            height: 60vh;
+            width: 40vw;
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .nav__one {
+            background-color: #e79e3d;
+            width: 100%;
+            height: 20vh;
+            transition: 1s;
+        }
+
+        .nav__two {
+            background-color: #80f1d1;
+            width: 100%;
+            height: 40vh;
+            transition: 1s;
+        }
+
+        section {
+            height: 60vh;
+            width: 60vw;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .section__one {
+            height: 40vh;
+            width: 100%;
+            background-color: #2fefba;
+            transition: 1s;
+        }
+
+        .section__two {
+            height: 20vh;
+            width: 100%;
+            background-color: #e79e3d;
+            transition: 1s;
+        }
+
+        footer {
+            width: 100vw;
+            height: 20vh;
+            background-color: #089ecc;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            .nav__one {
+                height: 10vh;
+                transition: 1s;
+            }
+
+            .nav__two {
+                height: 50vh;
+                transition: 1s;
+            }
+
+            .section__one {
+                height: 50vh;
+                transition: 1s;
+            }
+
+            .section__two {
+                height: 10vh;
+                transition: 1s;
+            }
+
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+
+            nav{
+                height: 30vh;
+                width: 100vw;
+            }
+            section{
+                height: 30vh;
+                width: 100vw;
+            }
+        }
+        
+        @media screen and (max-width: 319px) {
+            .wrapper{
+                display: none;
+            }
+
+            body:before{
+                content:  'NOT SCREEN!!!!';
+                color: black;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                height: 100vh;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="df_center">HEADER</header>
+
+    <main>
+        <nav>
+            <div class="nav__one df_center">NAV ONE</div>
+            <div class="nav__two df_center">NAV TWO</div>
+        </nav>
+        <section>
+            <div class="section__one df_center">SECTION ONE</div>
+            <div class="section__two df_center">SECTION TWO</div>
+        </section>
+    </main>
+
+    <footer class="df_center">FOOTER</footer>
+</div>
+
+</body>
+</html>
